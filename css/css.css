@@ -1,0 +1,216 @@
+body {
+    font: normal 14px/25px "Helvetica";
+}
+
+header {}
+
+header .header-top {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header .header-top .logo {
+    width: 192px;
+    height: 63px;
+    padding-top: 39px;
+    float: left;
+}
+
+header .header-top .logo h1 {
+    width: 192px;
+    height: 63px;
+}
+
+header .header-top .tool {
+    width: 266px;
+    height: 67px;
+    float: right;
+    padding-top: 35px;
+}
+
+header .header-top .tool .r1 {
+    width: 266px;
+    height: 25px;
+    margin-bottom: 12px;
+}
+
+header .header-top .tool .r1 .tel {
+    width: 32px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+header .header-top .tool .r1 .tel_number {
+    font-size: 20px;
+    color: #00978E;
+    display: inline-block;
+    width: 139px;
+    height: 25px;
+    margin-right: 8px;
+}
+
+header .header-top .tool .r1 .chinese_icon {
+    margin-right: 7px;
+}
+
+header .header-top .tool .r1 .icon {
+    width: 24px;
+    height: 24px;
+}
+
+header .header-top .tool .r2 {
+    border: 1px solid rgba(202, 202, 202, 0.60);
+    width: 264px;
+    height: 28px;
+}
+
+header .header-top .tool .r2 input {
+    border: none;
+    float: left;
+    font-size: 16px;
+    width: 222px;
+    height: 28px;
+    padding-left: 20px;
+    /* 去掉鼠标点击时候的框 */
+    outline: none;
+}
+
+header .header-top .tool .r2 button {
+    float: left;
+    width: 18px;
+    height: 18px;
+    /* 扁平掉 */
+    background: none;
+    border: none;
+    outline: none;
+    /* 设置触碰时鼠标指针的样式 */
+    cursor: pointer;
+    /* 用相对定位来微调位置 */
+    position: relative;
+    top: 4px;
+    right: 4px;
+}
+
+header .header-top .tool .r2 button img {
+    width: 18px;
+    height: 18px;
+}
+
+header nav {
+    height: 60px;
+    margin-top: 29px;
+    background: #00978E;
+}
+
+header nav ul {
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+header nav ul li {
+    float: left;
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+header nav ul li.cur {
+    background: #015E58;
+}
+
+header nav ul li a {
+    display: block;
+    width: 150px;
+    height: 60px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+header nav ul li a:hover {
+    background-color: orange;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner .center {
+    width: 1200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -600px;
+}
+
+.banner .banner_img {
+    width: 100%;
+}
+
+.banner .center .banner_title {
+    position: absolute;
+    top: 50%;
+    left: 114px;
+    margin-top: -50px;
+    width: 480px;
+    height: 79px;
+    font-size: 60px;
+    color: #015E58;
+    font-weight: normal;
+}
+
+.banner .center .btn {
+    position: absolute;
+    width: 56px;
+    height: 74px;
+    top: 50%;
+    margin-top: -37px;
+    border-radius: 5px;
+    background: rgba(8, 8, 8, 0.20);
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 74px;
+}
+
+.banner .center .left_btn {
+    left: 0;
+}
+
+.banner .center .right_btn {
+    right: 0;
+}
+
+.banner ol {
+    width: 120px;
+    height: 12px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -90px;
+}
+
+.banner ol li {
+    width: 20px;
+    height: 12px;
+    background-color: #fff;
+    margin-right: 10px;
+    float: left;
+    border-radius: 4px;
+}
+
+
+/* 最后一个li没有margin-right */
+
+.banner ol li:last-child {
+    margin-right: 0;
+}
+
+.banner ol li.cur {
+    width: 30px;
+    background-color: #00978E;
+}
