@@ -66,6 +66,7 @@ header .header-top .tool .r2 {
     border: 1px solid rgba(202, 202, 202, 0.60);
     width: 264px;
     height: 28px;
+    border-radius: 4px;
 }
 
 header .header-top .tool .r2 input {
@@ -228,6 +229,12 @@ header nav ul li a:hover {
 
 /* main */
 
+main h3 {
+    border-left: 5px solid #00978E;
+    padding-left: 10px;
+    height: 20px;
+}
+
 
 /* useful-links */
 
@@ -259,4 +266,366 @@ main .useful-links ul li a span {
     font-size: 20px;
     color: #000000;
     margin-top: 16px;
+}
+
+
+/* news and notice */
+
+main .news-and-notice {
+    width: 1200px;
+    height: 376px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+}
+
+
+/* news */
+
+main .news-and-notice .news {
+    float: left;
+    width: 878px;
+    height: 376px;
+}
+
+main .news-and-notice .news h3 {
+    line-height: 20px;
+    margin-bottom: 28px;
+    font-size: 16px;
+}
+
+main .news-and-notice .news .news-content .hot-news {
+    width: 422px;
+    height: 328px;
+    float: left;
+    margin-right: 15px;
+    position: relative;
+}
+
+main .news-and-notice .news .news-content .hot-news .info {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+
+main .news-and-notice .news .news-content ul {
+    float: left;
+    width: 401px;
+    height: 328px;
+}
+
+main .news-and-notice .news .news-content ul li {
+    line-height: 40px;
+    font-size: 14px;
+}
+
+main .news-and-notice .news .news-content ul li a {
+    float: left;
+}
+
+main .news-and-notice .news .news-content ul li a.spec {
+    color: #00978E;
+    font-weight: bold;
+}
+
+main .news-and-notice .news .news-content ul li span {
+    float: right;
+}
+
+
+/* notice */
+
+main .news-and-notice .notice {
+    float: left;
+    width: 322px;
+    height: 376px;
+}
+
+main .news-and-notice .notice h3 {
+    line-height: 20px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+main .news-and-notice .notice ol li {
+    overflow: hidden;
+}
+
+main .news-and-notice .notice ol li .number {
+    float: left;
+    width: 53px;
+    height: 57px;
+    background-color: #00978E;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 14px;
+    margin-right: 13px;
+    line-height: 57px;
+    text-align: center;
+}
+
+main .news-and-notice .notice ol li .number:last-child {
+    margin-bottom: 0;
+}
+
+main .news-and-notice .notice ol li dl {
+    float: left;
+}
+
+main .news-and-notice .notice ol li dl a {
+    color: #000;
+}
+
+
+/* ad */
+
+main .ad-images {
+    width: 1200px;
+    height: 168px;
+    margin: 20px auto 28px;
+}
+
+
+/* dep */
+
+main .dep-info {
+    /* 不写宽度默认撑满 */
+    height: 437px;
+    background-color: #FAFAFA;
+}
+
+main .dep-info .center {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+main .dep-info .center h3 {
+    width: 64px;
+    line-height: 20px;
+    font-size: 16px;
+    margin-top: 36px;
+    margin-bottom: 18px;
+}
+
+main .dep-info .center .more {
+    font-size: 14px;
+    color: #999999;
+    float: right;
+    position: absolute;
+    top: 39px;
+    right: 0;
+}
+
+main .dep-info .center .dep-content {
+    width: 1163px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+main .dep-info .center .dep-content .col {
+    float: left;
+    width: 263px;
+    margin-right: 37px;
+}
+
+main .dep-info .center .dep-content .col:last-child {
+    margin-right: 0;
+}
+
+main .dep-info .center .dep-content .col h4 {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+main .dep-info .center .dep-content .col h3::before {
+    content: '';
+    position: absolute;
+    background-color: #00978E;
+    width: 49px;
+    height: 2px;
+    top: 10px;
+    left: 51px;
+    ;
+}
+
+main .dep-info .center .dep-content .col h3::after {
+    content: '';
+    position: absolute;
+    background-color: #00978E;
+    width: 49px;
+    height: 2px;
+    top: 10px;
+    right: 51px;
+    ;
+}
+
+main .dep-info .center .dep-content .col ul li {
+    float: left;
+    width: 119px;
+    height: 34px;
+    border: 1px solid #AAA9A9;
+    background-color: #fff;
+    text-align: center;
+    line-height: 34px;
+    font-size: 14px;
+    margin-right: 21px;
+    margin-bottom: 25px;
+    border-radius: 3px;
+}
+
+main .dep-info .center .dep-content .col ul li a {
+    color: #000;
+}
+
+main .dep-info .center .dep-content .col ul li.spec a {
+    color: #00978E;
+}
+
+main .dep-info .center .dep-content .col ul li:nth-child(2n) {
+    margin-right: 0;
+}
+
+
+/* exp */
+
+main .exp-info {
+    width: 1200px;
+    height: 528px;
+    margin: 0 auto;
+    position: relative;
+}
+
+main .exp-info h3 {
+    margin-top: 60px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+main .exp-info .more {
+    font-size: 14px;
+    color: #999999;
+    float: right;
+    position: absolute;
+    top: 4px;
+    right: 0;
+}
+
+main .exp-info ul {
+    height: 498px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+main .exp-info ul li {
+    float: left;
+    width: 387px;
+    height: 190px;
+    margin-right: 13px;
+    margin-bottom: 58px;
+    overflow: hidden;
+}
+
+main .exp-info ul li .picbox {
+    width: 152px;
+    height: 190px;
+    float: left;
+    margin-right: 13px;
+}
+
+main .exp-info ul li .picbox img {
+    width: 152px;
+    height: 190px;
+}
+
+main .exp-info ul li .wordbox {
+    float: left;
+    width: 222px;
+    height: 190px;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 395px;
+    background-color: #FAFAFA;
+}
+
+footer .center {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 67px;
+}
+
+
+/* friend links */
+
+footer .center .friend-links {
+    height: 67px;
+    margin-bottom: 30px;
+}
+
+footer .center .friend-links h3 {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+footer .center .friend-links ul {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+footer .center .friend-links ul li {
+    float: left;
+    padding: 0 50px;
+    font-size: 16px;
+}
+
+footer .center .friend-links ul li a {
+    color: #000;
+}
+
+
+/* address */
+
+footer .center .address {
+    height: 112px;
+    margin-bottom: 119px;
+}
+
+footer .center .address h3 {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+footer .center .address ul {
+    overflow: hidden;
+    width: 664px;
+    margin-top: 18px;
+}
+
+footer .center .address ul li {
+    float: left;
+    font-size: 16px;
+    width: 204px;
+    margin-right: 16px;
+    margin-bottom: 20px;
+}
+
+footer .center .address ul li a {
+    color: #000;
 }
