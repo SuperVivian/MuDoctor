@@ -122,3 +122,7 @@ legend {
 #yui3-css-stamp.cssreset-context {
     display: none
 }
+
+a {
+    text-decoration: none;
+}

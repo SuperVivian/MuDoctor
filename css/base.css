@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'PingFangSCRegular';
+    src: url(../fonts/PingFangSCRegular.ttf) format('truetype');
+}
+
+body {
+    font-family: 'PingFangSCRegular';
+}
+
 .clearfix {
     overflow: hidden;
 }
@@ -13,7 +22,7 @@
     text-align: center;
 }
 
-.center {
+.center-wrap {
     width: 1152px;
     margin: 0 auto;
 }
