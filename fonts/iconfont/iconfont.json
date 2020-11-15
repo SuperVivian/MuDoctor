@@ -13,6 +13,13 @@
       "unicode_decimal": 58905
     },
     {
+      "icon_id": "778500",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
       "icon_id": "970721",
       "name": "qq",
       "font_class": "qq",

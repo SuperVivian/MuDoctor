@@ -512,9 +512,9 @@
 }
 
 
-/* common */
+/* content-part */
 
-.content-part h2 {
+.content-part .center-wrap .hd h2 {
     font-size: 36px;
     color: #1C1F21;
     line-height: 54px;
@@ -522,21 +522,149 @@
     padding: 40px 12px 32px 0px;
 }
 
-
-/* xxsw */
-
-.xxsw {
-    background: #F7F7F7;
+.content-part .center-wrap .hd {
+    position: relative;
 }
 
-.xxsw .center-wrap h2 {
-    display: inline-block;
+.content-part .center-wrap .hd h2 {
+    float: left;
 }
 
-.xxsw .center-wrap em {
+.content-part .center-wrap .hd em {
+    position: absolute;
     font-size: 14px;
     color: #1C1F21;
     line-height: 18px;
+    float: left;
+    top: 68px;
+}
+
+.content-part .center-wrap .hd nav {
+    float: right;
+    width: 476px;
+    padding-top: 52px;
+}
+
+.content-part .center-wrap .hd nav ul li {
+    float: left;
+    margin-right: 14px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 22px;
+}
+
+.content-part .center-wrap .hd nav ul li a {
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.content-part .center-wrap .hd nav ul li.current a {
+    color: #20BD9A;
+    padding-bottom: 4px;
+    border-bottom: 4px solid #20BD9A;
+}
+
+.content-part .center-wrap .hd nav ul li:last-child {
+    margin-right: 0px;
+}
+
+
+/* bd */
+
+
+/* 公共的一个特效：鼠标触碰图片，能够有放大效果 */
+
+.content-part img {
+    transition: transform .4s ease 0s;
+}
+
+.content-part img:hover {
+    transform: scale(1.1);
+}
+
+.content-part .big-grid {
+    overflow: hidden;
+}
+
+.content-part .picbox {
+    height: 184px;
+    overflow: hidden;
+}
+
+
+/* more-grid */
+
+.content-part .center-wrap .bd .more-grid {
+    width: 264px;
+    height: 270px;
+    background-image: linear-gradient(180deg, #34E3BC 0%, #15AF7A 98%);
+    position: relative;
+}
+
+.content-part .center-wrap .bd .more-grid a {
+    /* a转块级元素 */
+    display: block;
+    height: 270px;
+    padding-top: 46px;
+    box-sizing: border-box;
+}
+
+.content-part .center-wrap .bd .more-grid p {
+    text-align: center;
+    color: white;
+    line-height: 24px;
+    font-size: 15px;
+}
+
+.content-part .center-wrap .bd .more-grid p.iconfont {
+    position: absolute;
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    left: 50%;
+    top: 128px;
+    margin-left: -24px;
+}
+
+
+/* 鼠标触碰more-grid盒子之后，iconfont进行蹦跳动画 */
+
+.content-part .more-grid:hover .iconfont {
+    animation: ud .4s ease 0s infinite alternate;
+}
+
+@keyframes ud {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(10px);
+    }
+}
+
+.content-part .center-wrap .bd .more-grid ul {
+    margin-top: 112px;
+    padding-left: 40px;
+}
+
+.content-part .center-wrap .bd .more-grid ul li {
+    color: white;
+    float: left;
+    border-right: 1px solid white;
+    padding: 0 9px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+}
+
+.content-part .center-wrap .bd .more-grid ul li:last-child {
+    border-right: none;
+}
+
+
+/* 新鲜甩尾 */
+
+.xxsw {
+    background: #F7F7F7;
 }
 
 .xxsw .center-wrap ul li {
@@ -576,122 +704,472 @@
 }
 
 
-/* jjzyx */
+/* 机酒自由行 */
 
-.jjzyx {
+.common-style {
     height: 738px;
-}
-
-.jjzyx {
     background: #fff;
-}
-
-
-/* hd */
-
-.jjzyx .center-wrap .hd {
-    position: relative;
-}
-
-.jjzyx .center-wrap .hd h2 {
-    float: left;
-}
-
-.jjzyx .center-wrap .hd em {
-    position: absolute;
-    font-size: 14px;
-    color: #1C1F21;
-    line-height: 18px;
-    float: left;
-    top: 68px;
-}
-
-.jjzyx .center-wrap .hd nav {
-    float: right;
-    width: 476px;
-    padding-top: 52px;
-}
-
-.jjzyx .center-wrap .hd nav ul li {
-    float: left;
-    width: 56px;
-    margin-right: 14px;
-    font-size: 14px;
-    text-align: center;
-    line-height: 22px;
-}
-
-.jjzyx .center-wrap .hd nav ul li a {
-    color: rgba(0, 0, 0, 0.85);
-}
-
-.jjzyx .center-wrap .hd nav ul li a:hover {
-    color: #20BD9A;
-    padding-bottom: 4px;
-    border-bottom: 4px solid #20BD9A;
-}
-
-.jjzyx .center-wrap .hd nav ul li:last-child {
-    margin-right: 0px;
 }
 
 
 /* bd */
 
-.jjzyx .center-wrap .bd {}
-
-.jjzyx .center-wrap .bd ul li {
+.common-style .center-wrap .bd>ul>li {
     float: left;
-    width: 264px;
-    height: 270px;
     margin-right: 32px;
     margin-bottom: 32px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
 }
 
-.jjzyx .center-wrap .bd ul li:first-child {
+.common-style .center-wrap .bd>ul>li:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.20);
+}
+
+.common-style .center-wrap .bd>ul>li:nth-child(3),
+.common-style .center-wrap .bd>ul>li:nth-child(7) {
+    margin-right: 0;
+}
+
+
+/* big-grid */
+
+.common-style .center-wrap .bd>ul>li.big-grid {
     width: 560px;
+    height: 270px;
+    position: relative;
 }
 
-.jjzyx .center-wrap .bd ul li:nth-child(3),
-.jjzyx .center-wrap .bd ul li:last-child {
-    margin-right: 0px;
+.common-style .center-wrap .bd>ul>li.big-grid .info {
+    position: absolute;
+    width: 560px;
+    height: 103px;
+    color: white;
+    background-color: rgba(0, 0, 0, .55);
+    bottom: 0;
+    left: 0;
+    padding: 30px 26px;
+    box-sizing: border-box;
+    line-height: 26px;
 }
 
-.jjzyx .center-wrap .bd ul li .picbox {
+
+/* pro-grid */
+
+.common-style .center-wrap .bd>ul>li.pro-grid {
+    width: 264px;
+    height: 270px;
+}
+
+.common-style .center-wrap .bd>ul>li.pro-grid .picbox {
     width: 264px;
     height: 184px;
     position: relative;
 }
 
-.jjzyx .center-wrap .bd ul li .picbox img {
+.common-style .center-wrap .bd>ul>li.pro-grid .picbox img {
     width: 264px;
     height: 184px;
 }
 
-.jjzyx .center-wrap .bd ul li .picbox .tag {
+.common-style .center-wrap .bd>ul>li.pro-grid .picbox .tag {
     position: absolute;
-    display: block;
+    width: 74px;
+    height: 40px;
     bottom: 0px;
     left: 0px;
     background-color: rgba(0, 0, 0, 0.20);
     font-size: 14px;
     color: #FFFFFF;
-    line-height: 22px;
-    width: 74px;
-    height: 40px;
+    line-height: 40px;
+    text-align: center;
 }
 
-.jjzyx .center-wrap .bd ul li.more {
-    background-image: linear-gradient(180deg, #34E3BC 0%, #15AF7A 98%);
-}
-
-.jjzyx .center-wrap .bd ul li .wordbox {
-    width: 264px;
-    height: 86px;
-    background-color: #fff;
+.common-style .center-wrap .bd>ul>li.pro-grid .wordbox {
     font-size: 14px;
     color: #1C1F21;
     line-height: 22px;
     padding: 20px 14px 22px;
+}
+
+
+/* ddwl */
+
+.ddwl {
+    height: 576px;
+    background-color: #F7F7F7;
+}
+
+.ddwl .center-wrap .hd nav {
+    width: 349px;
+}
+
+.ddwl .bd .col {
+    float: left;
+    width: 364px;
+    height: 480px;
+    margin-right: 30px;
+}
+
+.ddwl .bd .col:last-child {
+    margin-right: 0;
+}
+
+.ddwl .bd .bigpicbox {
+    width: 364px;
+    height: 270px;
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.ddwl .bd .bigpicbox .info {
+    position: absolute;
+    width: 364px;
+    height: 104px;
+    background-color: rgba(0, 0, 0, .53);
+    bottom: 0;
+    left: 0;
+    padding: 21px 17px 0;
     box-sizing: border-box;
+    color: white;
+    font-size: 14px;
+}
+
+.ddwl .bd .bigpicbox .info .bottom {
+    padding-top: 6px;
+}
+
+.ddwl .bd .bigpicbox .info .bottom .tag {
+    float: left;
+}
+
+.ddwl .bd .bigpicbox .info .bottom .price {
+    float: right;
+}
+
+.ddwl .bd .bigpicbox .info .bottom .price strong {
+    color: #36DFBA;
+}
+
+.ddwl .bd .grid {
+    width: 364px;
+    height: 120px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.ddwl .bd .grid .picbox {
+    float: left;
+    width: 120px;
+    height: 120px;
+}
+
+.ddwl .bd .grid .wordbox {
+    float: left;
+    width: 244px;
+    height: 120px;
+    padding: 26px 18px 0;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    font-size: 14px;
+    color: #000;
+}
+
+.ddwl .center-wrap .bd .more-grid {
+    width: 364px;
+    background-image: linear-gradient(180deg, #FF6374 1%, #FF7368 98%);
+}
+
+.ddwl .center-wrap .bd .more-grid ul {
+    margin-top: 112px;
+    padding-left: 24px;
+}
+
+.ddwl .bd .grid:hover,
+.ddwl .bd .bigpicbox:hover,
+.ddwl .bd .more-grid:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.20);
+}
+
+
+/* 特色当地体验 */
+
+.tsddty {
+    height: 456px;
+}
+
+.tsddty .center-wrap .hd h2 {
+    float: none;
+    text-align: center;
+}
+
+.tsddty .bd ul li {
+    float: left;
+    width: 264px;
+    height: 290px;
+    margin-right: 32px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+.tsddty .bd ul li:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.20);
+}
+
+.tsddty .bd ul li:last-child {
+    margin-right: 0;
+}
+
+.tsddty .bd ul li .wordbox {
+    padding: 16px 9px 0;
+}
+
+.tsddty .bd ul li .wordbox .proname {
+    font-weight: bold;
+    font-size: 16px;
+    color: #000000;
+    /* 给p加个高 */
+    height: 48px;
+}
+
+.tsddty .bd ul li .wordbox .score {
+    font-size: 13px;
+    color: #FA6400;
+}
+
+.tsddty .bd ul li .wordbox .comment {
+    font-size: 13px;
+    color: #000000;
+}
+
+
+/* 最世界 深度旅行 */
+
+.zsjsdlx {
+    background-color: #F7F7F7;
+}
+
+.zsjsdlx .center-wrap .hd nav {
+    width: 85px;
+}
+
+.zsjsdlx .center-wrap .bd .more-grid {
+    background-image: linear-gradient(180deg, #BD5EE8 0%, #832ABB 98%);
+}
+
+.zsjsdlx .center-wrap .bd .more-grid ul {
+    padding-left: 41px;
+}
+
+
+/* 跟团 半自助游 */
+
+.gtbzzy {
+    background-color: #fff;
+}
+
+.gtbzzy .center-wrap .hd nav {
+    width: 157px;
+}
+
+.gtbzzy .center-wrap .bd .more-grid {
+    background-image: linear-gradient(180deg, #41D8E9 0%, #3685EA 98%);
+}
+
+.gtbzzy .center-wrap .bd .more-grid ul {
+    padding-left: 67px;
+}
+
+
+/* 下滑特效 */
+
+.big-grid.havehover .mask {
+    /* 盖住父盒子 */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+    /* 总透明度 */
+    opacity: 0;
+    transition: opacity .4s ease 0s;
+}
+
+.big-grid.havehover:hover .mask {
+    opacity: 1;
+}
+
+.big-grid.havehover .circle {
+    position: absolute;
+    top: -106px;
+    left: 50%;
+    margin-left: -53px;
+    width: 106px;
+    height: 106px;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    box-sizing: border-box;
+    padding-top: 25px;
+    font-size: 18px;
+    transition: top .5s ease 0s;
+}
+
+.big-grid.havehover .circle p {
+    text-align: center;
+}
+
+.big-grid.havehover:hover .circle {
+    top: 62px;
+}
+
+.big-grid.havehover .word {
+    position: absolute;
+    bottom: -100px;
+    left: 10px;
+    color: white;
+    transition: bottom .5s ease 0s;
+}
+
+.big-grid.havehover:hover .word {
+    bottom: 30px;
+}
+
+
+/* 页脚 */
+
+
+/* part1 */
+
+footer .part1 {
+    height: 220px;
+    background-color: #f7f7f7;
+}
+
+footer .part1 ul {
+    padding-top: 36px;
+}
+
+footer .part1 ul li {
+    float: left;
+    border-right: 1px solid #1C1F21;
+    padding: 0 30px;
+    height: 16px;
+    line-height: 16px;
+}
+
+footer .part1 ul li:first-child {
+    padding-left: 0;
+}
+
+footer .part1 ul li a {
+    color: #1C1F21;
+    font-size: 16px;
+}
+
+footer .part1 ul li:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+footer .part1 .dlbox {
+    padding-top: 40px;
+}
+
+footer .part1 dl {
+    width: 289px;
+    float: left;
+    padding-left: 75px;
+    margin-right: 30px;
+    position: relative;
+}
+
+footer .part1 dl:last-child {
+    margin-right: 0;
+}
+
+footer .part1 dl dt {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer .part1 dl::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/icons-you.png);
+    left: 0;
+}
+
+footer .part1 dl.txfw::before {
+    background-position: -150px -178px;
+}
+
+footer .part1 dl.ccsx::before {
+    background-position: -150px -104px;
+}
+
+footer .part1 dl.axph::before {
+    background-position: -150px -31px;
+}
+
+footer .part2 {
+    height: 225px;
+    background-color: #1C1F21;
+}
+
+footer .part2 .r1 {
+    padding-top: 48px;
+    color: white;
+}
+
+footer .part2 .r1 h2 {
+    float: left;
+    font-size: 46px;
+}
+
+footer .part2 .r1 .slogan {
+    float: left;
+    width: 532px;
+    font-size: 14px;
+    margin-left: 21px;
+    position: relative;
+    top: 14px;
+}
+
+footer .part2 .links {
+    padding-top: 30px;
+}
+
+footer .part2 .links li {
+    float: left;
+    border-right: 1px solid white;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 14px;
+    height: 14px;
+}
+
+footer .part2 .links li a {
+    color: white;
+}
+
+footer .part2 .links li:first-child {
+    padding-left: 0;
+}
+
+footer .part2 .links li:last-child {
+    border-right: none;
+}
+
+footer .copyrights {
+    color: white;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+footer .copyrights a {
+    color: white;
 }
