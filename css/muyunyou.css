@@ -388,6 +388,7 @@
 }
 
 .banner .center-wrap .banner-nav {
+    width: 652px;
     height: 100%;
 }
 
@@ -398,18 +399,21 @@
 .banner .center-wrap .banner-nav ul li {
     height: 16.66%;
     width: 296px;
-    background: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.45);
     position: relative;
     border-bottom: 1px solid rgb(165, 165, 165);
     /* 高度包含边框 */
     box-sizing: border-box;
 }
+.banner .center-wrap .banner-nav>ul>li.current {
+    background-color: rgba(0, 0, 0, 0.8);
 
-.banner .center-wrap .banner-nav ul li:last-child {
+}
+.banner .center-wrap .banner-nav>ul>li:last-child {
     border-bottom: none;
 }
 
-.banner .center-wrap .banner-nav ul li dl {
+.banner .center-wrap .banner-nav>ul>li dl {
     position: absolute;
     height: 48px;
     top: 50%;
@@ -418,17 +422,17 @@
     color: #fff;
 }
 
-.banner .center-wrap .banner-nav ul li dl dt {
+.banner .center-wrap .banner-nav>ul>li dl dt {
     font-size: 18px;
     line-height: 26px;
 }
 
-.banner .center-wrap .banner-nav ul li dl dd {
+.banner .center-wrap .banner-nav>ul>li dl dd {
     font-size: 16px;
     line-height: 22px;
 }
 
-.banner .center-wrap .banner-nav ul li.hot::before {
+.banner .center-wrap .banner-nav>ul>li.hot::before {
     content: '';
     position: absolute;
     width: 24px;
@@ -439,7 +443,7 @@
     background: url(../images/icons-you.png) no-repeat -30px -400px;
 }
 
-.banner .center-wrap .banner-nav ul li.hk::before {
+.banner .center-wrap .banner-nav>ul>li.hk::before {
     content: '';
     position: absolute;
     width: 24px;
@@ -450,7 +454,7 @@
     background: url(../images/icons-you.png) no-repeat -28px -217px;
 }
 
-.banner .center-wrap .banner-nav ul li.jp::before {
+.banner .center-wrap .banner-nav>ul>li.jp::before {
     content: '';
     position: absolute;
     width: 24px;
@@ -461,7 +465,7 @@
     background: url(../images/icons-you.png) no-repeat -26px -172px;
 }
 
-.banner .center-wrap .banner-nav ul li.as::before {
+.banner .center-wrap .banner-nav>ul>li.as::before {
     content: '';
     position: absolute;
     width: 24px;
@@ -472,7 +476,7 @@
     background: url(../images/icons-you.png) no-repeat -28px -263px;
 }
 
-.banner .center-wrap .banner-nav ul li.eu::before {
+.banner .center-wrap .banner-nav>ul>li.eu::before {
     content: '';
     position: absolute;
     width: 24px;
@@ -483,7 +487,7 @@
     background: url(../images/icons-you.png) no-repeat -29px -351px;
 }
 
-.banner .center-wrap .banner-nav ul li.au::before {
+.banner .center-wrap .banner-nav>ul>li.au::before {
     content: '';
     position: absolute;
     width: 24px;
@@ -509,6 +513,7 @@
     background-color: rgba(0, 0, 0, 0.55);
     box-sizing: border-box;
     display: none;
+    z-index: 99999;
 }
 
 .banner .center-wrap .banner-nav .menus-box .menu dl {
@@ -517,8 +522,8 @@
     padding-bottom: 12px;
 }
 
-.banner .center-wrap .banner-nav .menus-box .menu.cur {
-    /* display: block; */
+.banner .center-wrap .banner-nav .menus-box .menu.current {
+    display: block;
 }
 
 .banner .center-wrap .banner-nav .menus-box .menu dl dt {
@@ -1225,4 +1230,20 @@ footer .copyrights {
 
 footer .copyrights a {
     color: white;
+}
+
+/* backtotop */
+.backtotop{
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+    color:#000;
+    display: none;
 }
