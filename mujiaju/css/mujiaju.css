@@ -1,0 +1,115 @@
+/* 页头 */
+
+.site-head {
+    width: 100%;
+    height: 161px;
+}
+
+
+/* 顶部 */
+
+.site-head .header-top {
+    background-color: #0058AA;
+    width: 100%;
+    height: 40px;
+}
+
+.site-head .header-top .tele {
+    float: right;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 40px;
+}
+
+
+/* 导航 */
+
+.site-head .main-nav {
+    background-color: #fff;
+    width: 100%;
+    height: 121px;
+    overflow: hidden;
+}
+
+.site-head .main-nav h1 {
+    float: left;
+    font-size: 64px;
+    color: #0058AA;
+    line-height: 121px;
+}
+
+
+/* 菜单列表 */
+
+.site-head .main-nav .menu-list {
+    float: left;
+    margin-left: 110px;
+}
+
+.site-head .main-nav .menu-list .menu-li {
+    float: left;
+    background-color: greenyellow;
+    width: 64px;
+    height: 81px;
+    margin-top: 19px;
+    margin-bottom: 11px;
+    margin-right: 60px;
+}
+
+.site-head .main-nav .menu-list .menu-li .menu-text {
+    font-size: 16px;
+    color: #545454;
+}
+
+.site-head .main-nav .menu-list .menu-li .icon {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.site-head .main-nav .menu-list .menu-li .icon.cur {
+    background-color: #0058AA;
+}
+
+
+/* banner */
+
+.banner {
+    background-color: aquamarine;
+    width: 100%;
+    height: 650px;
+}
+
+
+/* 精品推荐 */
+
+.recommend {
+    width: 100%;
+    height: 590px;
+    background-color: #EFF0F4;
+}
+
+
+/* 新闻中心 */
+
+.press-center {
+    width: 100%;
+    height: 545px;
+}
+
+
+/* footer */
+
+.site-foot {
+    width: 100%;
+}
+
+.site-foot .foot-top {
+    height: 210px;
+    background-color: #06142F;
+}
+
+.site-foot .foot-bottom {
+    height: 30px;
+    background-color: #202C46;
+}

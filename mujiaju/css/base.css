@@ -1,0 +1,20 @@
+body {
+    font-family: '微软雅黑';
+}
+
+.center-wrap {
+    width: 1155px;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+}
+
+footer .foot-top {
+    height: 210px;
+}
+
+footer .foot-bottom {
+    height: 30px;
+}
