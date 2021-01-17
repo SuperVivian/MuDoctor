@@ -41,43 +41,147 @@
 
 /* 菜单列表 */
 
-.site-head .main-nav .menu-list {
+.site-head .main-nav .center-wrap .menu-list {
     float: left;
-    margin-left: 110px;
+    margin-left: 80px;
 }
 
-.site-head .main-nav .menu-list .menu-li {
+.site-head .main-nav .center-wrap .menu-list .menu-li {
     float: left;
-    background-color: greenyellow;
     width: 64px;
-    height: 81px;
-    margin-top: 19px;
-    margin-bottom: 11px;
+    height: 90px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     margin-right: 60px;
 }
 
-.site-head .main-nav .menu-list .menu-li .menu-text {
+.site-head .main-nav .center-wrap .menu-list .menu-li:last-child {
+    margin-right: 0px;
+}
+
+.site-head .main-nav .center-wrap .menu-list .menu-li .menu-text {
     font-size: 16px;
     color: #545454;
 }
 
-.site-head .main-nav .menu-list .menu-li .icon {
+.site-head .main-nav .center-wrap .menu-list .menu-li .icon {
     border-radius: 50%;
     width: 50px;
     height: 50px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
-.site-head .main-nav .menu-list .menu-li .icon.cur {
-    background-color: #0058AA;
+
+/* home */
+
+.site-head .main-nav .center-wrap .menu-list .menu-li .icon.icon-home {
+    background: url("../../images/mujiaju/home-gry.png") no-repeat center center;
+}
+
+.site-head .main-nav .center-wrap .menu-list .menu-li .icon.icon-home:hover {
+    background: #0058AA url("../../images/mujiaju/home-white.png") no-repeat center center;
+}
+
+
+/* about */
+
+.site-head .main-nav .center-wrap .menu-list .menu-li .icon.icon-abouts {
+    background: url("../../images/mujiaju/abouts-gry.png") no-repeat center center;
+}
+
+.site-head .main-nav .center-wrap .menu-list .menu-li .icon.icon-abouts:hover {
+    background: #0058AA url("../../images/mujiaju/abouts-white.png") no-repeat center center;
+}
+
+
+/* build */
+
+.site-head .main-nav .center-wrap .menu-list .menu-li .icon.icon-kefu {
+    background: url("../../images/mujiaju/kefu-gry.png") no-repeat center center;
+}
+
+.site-head .main-nav .center-wrap .menu-list .menu-li .icon.icon-kefu:hover {
+    background: #0058AA url("../../images/mujiaju/kefu-white.png") no-repeat center center;
+}
+
+
+/* product */
+
+.site-head .main-nav .center-wrap .menu-list .menu-li .icon.icon-chanpin {
+    background: url("../../images/mujiaju/chanpin-gry.png") no-repeat center center;
+}
+
+.site-head .main-nav .center-wrap .menu-list .menu-li .icon.icon-chanpin:hover {
+    background: #0058AA url("../../images/mujiaju/chanpin-white.png") no-repeat center center;
+}
+
+
+/* service */
+
+.site-head .main-nav .center-wrap .menu-list .menu-li .icon.icon-fuwu {
+    background: url("../../images/mujiaju/fuwu-gry.png") no-repeat center center;
+}
+
+.site-head .main-nav .center-wrap .menu-list .menu-li .icon.icon-fuwu:hover {
+    background: #0058AA url("../../images/mujiaju/fuwu-white.png") no-repeat center center;
+}
+
+.site-head .main-nav .center-wrap .menu-list .menu-li .icon>img {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -16px;
+    margin-top: -16px;
+}
+
+
+/* search */
+
+.site-head .main-nav .center-wrap .search {
+    float: right;
+    width: 272px;
+    height: 38px;
+    margin-top: 50px;
+    margin-bottom: 34px;
+    position: relative;
+}
+
+.site-head .main-nav .center-wrap .search .text-search {
+    width: 222px;
+    height: 34px;
+    border: 1px solid #D3D3D3;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.site-head .main-nav .center-wrap .search .btn-search {
+    display: inline-block;
+    width: 48px;
+    height: 38px;
+    background: #0058AA url(../../images/mujiaju/search.png) no-repeat center center;
+    background-size: 32px 32px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 
 
 /* banner */
 
 .banner {
-    background-color: aquamarine;
     width: 100%;
     height: 650px;
+}
+
+.banner .img-box {
+    width: 100%;
+    height: 650px;
+    background: url(../../images/mujiaju/banner01.png) no-repeat center center;
 }
 
 
